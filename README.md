@@ -1,4 +1,4 @@
-# To-Do-List
+To-Do-List
 Task Manager is a responsive, browser-based to-do list application built with vanilla JavaScript, HTML, and CSS. This project was developed to demonstrate front-end web development skills while creating a practical tool for everyday task management.
 
 Features:
@@ -52,3 +52,4 @@ Usage:
 Simply open the HTML file in any modern web browser to start using the application. No installation or server setup required.
 Browser Compatibility
 Compatible with all modern browsers including Chrome, Firefox, Safari, and Edge.
+
