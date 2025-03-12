@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    
+    <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Add a new task...">
+        <input type="datetime-local" id="dueDateInput">
+        <button id="addTask">Add</button>
+    </div>
+    
+    <div class="filter-container">
+        <button id="filterAll" class="filter-btn active">All</button>
+        <button id="filterPending" class="filter-btn">Pending</button>
+        <button id="filterCompleted" class="filter-btn">Completed</button>
+        <button id="filterDueSoon" class="filter-btn">Due Soon</button>
+    </div>
+    
+    <div id="taskList"></div>
+    
+    <footer class="footer">
+        <p>Task Manager © 2025 | Made with ❤️ as a personal project | <a href="#" class="github-link" id="aboutLink">About This Project</a></p>
+    </footer>
+    
+    <!-- Welcome Modal -->
+    <div id="welcomeModal" class="modal-overlay" style="display: none;">
+        <div class="modal">
+            <h2>Welcome to My Task Manager!</h2>
+            <p>This to-do list application was created by me as a coding project to improve my JavaScript, HTML, and CSS skills while building something useful for everyday life.</p>
+            <p>Features include task management with due dates, filtering options, and data that persists in your browser's local storage.</p>
+            <p>Feel free to explore the features and use this tool to organize your tasks!</p>
+            <button class="modal-close" id="closeWelcomeModal">Get Started</button>
+        </div>
+    </div>
+    
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal-overlay" style="display: none;">
+        <div class="modal">
+            <h2>About This Project</h2>
+            <p>This Task Manager was developed by me as part of my journey to improve my web development skills.</p>
+            <p>The application is built with vanilla JavaScript, HTML, and CSS without any external libraries or frameworks, demonstrating core web development concepts like DOM manipulation and local storage use.</p>
+            <p>The project helped me learn about:</p>
+            <ul style="text-align: left; display: inline-block;">
+                <li>Creating interactive web applications</li>
+                <li>Managing application state</li>
+                <li>Persisting data in the browser</li>
+                <li>Building responsive layouts</li>
+                <li>Implementing filter and sort functionalities</li>
+            </ul>
+            <p>I'm continuously improving this project and welcome any feedback!</p>
+            <button class="modal-close" id="closeAboutModal">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
